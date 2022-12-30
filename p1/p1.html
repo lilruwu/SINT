@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <script src="p1.js"></script>
+  <link rel="stylesheet" href="p1.css">
+  <title> ASSIGNMENT 1</title>
+</head>
+
+<body>
+
+  <header>
+    Meteor Shower Music
+  </header>
+  <br>
+
+  <form id="form" action="http://alberto.gil.webs.uvigo.es/SINT/22-23/p1.php" onsubmit="return $_val=checking();">
+    <div id="registration">
+      <div id="tittle">
+        <!--TITTLE-->
+
+
+        Registration Form
+
+      </div>
+      <br><br>
+      <!--NAMES-->
+
+      First and Last Name:
+      <br>
+      <input type="text" id="cname" class="textbox" name="cname" value="" placeholder="Name and last name"
+        pattern="[a-zA-Zá-úñ]{3,} [a-zA-Zá-úñ]{3,}" title="Use names at least of 3 letters!"><br><br>
+
+
+      <!--USERNAME-->
+
+      Username:
+      <br>
+      <input type="text" id="clogin" name="clogin" class="textbox" value="" placeholder="Ex: Steph30"
+        title="Only lowercase letters, can contain numbers and must be between 4 and 8 characters long!">
+      <br><br>
+
+      <div id="store_clogin"></div>
+
+
+      <!--PASSWORD-->
+      <!--pattern="[a-z]+" required-->
+
+      Password:
+      <br>
+      <input type="password" id="cpasswd" class="textbox" name="cpasswd" value="" placeholder="Password"
+        title="You MUST use at least one number, one uppercase letter, one lowercase letter, +-*/ and between 6 and 12 characters!"><br><br>
+
+
+      <div id="store_cpassword"></div>
+
+
+      <!--DNI-->
+
+      ID/DNI:
+      <br>
+      <input type="text" id="cdni" name="cdni" value="" class="textbox" placeholder="ex: 12345678X"><br><br>
+      <div id="dni_validation"></div>
+      <!--DNI--><br>
+      <!--HTLM5 EMAIL-->
+
+      Enter your email:
+      <br>
+      <input type="email" id="cemail" name="cemail" class="textbox" size="30" placeholder="ex:google@gmail.com"
+        value=""><br><br>
+      <!--DNI--><br>
+
+
+
+      <!--PICTURE-->
+
+      Upload an user picture:<br>
+
+      <input type="file" id="cfile" name="cfile"><br><br>
+
+      <!--AGE-->
+
+      Choose your age range:<br><br>
+      <div id="age">
+
+        <input type="radio" id="cage1" name="cage" class="age" value="Less that 25">
+        Less than 25<br>
+
+        <input type="radio" id="cage2" name="cage" class="age" value="Between 25 and 40">
+        Between 25 and 40<br>
+
+        <input type="radio" id="cage3" name="cage" class="age" value="Between 40 and 60">
+        Between 40 and 60<br>
+
+        <input type="radio" id="cage4" name="cage" class="age" value="Over 60">
+        Over 60<br><br>
+      </div>
+
+      <!--GENRES-->
+
+      Choose your favourite music genres:<br><br>
+
+      <div id="genres">
+
+
+
+        <input type="checkbox" id="pop" name="cgenre[]" value="pop">
+        POP<br>
+
+        <input type="checkbox" id="rock" name="cgenre[]" value="rock">
+        ROCK<br>
+
+        <input type="checkbox" id="country" name="cgenre[]" value="country">
+        COUNTRY<br>
+
+        <input type="checkbox" id="soul" name="cgenre[]" value="soul">
+        SOUL<br>
+
+        <input type="checkbox" id="check_all" name="select_all" value="ALL" onclick="checkAll()">
+        SELECT ALL<br>
+
+        <input type="checkbox" id="discard_all" name="discardall" value="discard" onclick="discardAll()">
+        DISCARD ALL<br><br>
+      </div>
+
+
+      <!--COMMENT-->
+
+      Additional comments:
+      <br>
+      <textarea id="ccomment" class="textbox2" name="ccomment" rows="4" cols="50"></textarea><br><br>
+
+      <!--MENU DESPLEGABLE-->
+
+      INTERNET PROVIDER
+      <br>
+      <select name="cInternet" id="internet" class="internet_prov">
+        <option value="">Select one option</option>
+        <option value="R">R</option>
+        <option value="Movistar">Movistar</option>
+        <option value="Vodafone">Vodafone</option>
+        <option value="Orange">Orange</option>
+      </select><br><br>
+
+      SEND METHOD<br><br>
+      <div id="age2">
+        <input type="radio" id="get" name="cmethod" value="Get" onclick="get_sel()">
+        Get<br>
+        <input type="radio" id="post" name="cmethod" value="Post" onclick="post_sel()">
+        Post<br><br>
+      </div>
+
+      ECRYPTION
+      <div id="age3">
+        <input type="radio" id="app" name="cencoding" class="age2" value="application/x-www-form-urlencoded">
+        application/x-www-form-urlencoded<br>
+        <input type="radio" id="multi" name="cencoding" class="age2" value="multipart/form-data">
+        multipart/form-data<br><br>
+      </div>
+      <br><br>
+
+      <input type="hidden" id="cbrowser" name="cbrowser">
+  
+
+      <input type="hidden" id="cdate" name="cdate">
+
+      <input type="submit" name="cbutton" value="SUBMIT" class="submit_but"
+        onclick="username(),checkPassword(),checkDNI(),getDate(),getBrowser()">
+      <br><br>
+      <input type="RESET" value="RESET" class="reset_but" onclick="location.reload()">
+    </div>
+    <br>
+    Rubén Castro González
+  </form>
+</body>
+
+</html>

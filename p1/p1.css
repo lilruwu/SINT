@@ -1,0 +1,141 @@
+body {
+    background-image: url(file:///home/eetlabs.local/sint/sint178/public_html/lluvia_meteoritos_dalle.png);
+
+    background-color: rgb(0, 0, 0);
+    font-family: Arial;
+    text-align: center;
+    color: cornsilk;
+}
+
+
+header {
+    /*ELEMENT SELECTOR*/
+    font-size: +50;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    border-radius: 30px;
+    border-color: rgb(247, 154, 32);
+    border-width: 5px;
+    border-style: solid;
+    background-color: rgb(1, 28, 78);
+
+
+}
+
+header::first-line {
+    /*PSEUDO ELEMENT SELECTOR*/
+    text-transform: uppercase;
+}
+
+.submit_but {
+    /*CLASS SELECTOR*/
+    border: solid 3px;
+    border-color: rgb(255, 170, 0);
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    outline: none;
+    background-color: rgb(255, 170, 0);
+
+}
+
+.submit_but:hover {
+    /*PSEUDO CLASS SELECTOR*/
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
+
+#registration {
+    /*WITH DIVISION*/
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    border-radius: 30px;
+    border-color: rgb(247, 154, 32);
+    border-width: 5px;
+    border-style: solid;
+    background-color: rgb(1, 28, 78);
+}
+
+#tittle {
+    font-size: +30;
+}
+
+.textbox {
+    border: solid 3px;
+    border-color: rgb(247, 154, 32);
+    border-radius: 30px;
+    padding: 5px;
+    outline: none;
+}
+
+.textbox:focus {
+    border-color: blueviolet;
+}
+
+.textbox2 {
+    border: solid 3px;
+    border-color: rgb(247, 154, 32);
+    border-radius: 15px;
+    padding: 5px;
+    outline: none;
+}
+
+.textbox2:focus {
+    border-color: blueviolet;
+}
+
+.internet_prov {
+    border: solid 3px;
+    border-color: rgb(247, 154, 32);
+    border-radius: 30px;
+    padding: 5px;
+    outline: none;
+}
+
+.internet_prov:focus {
+    border-color: blueviolet;
+}
+
+#age {
+    text-align: left;
+    margin-left: 207px;
+}
+
+#genres {
+    text-align: left;
+    margin-left: 209px;
+}
+
+#age2 {
+    text-align: left;
+    margin-left: 223px;
+}
+
+#age3 {
+    text-align: left;
+    margin-left: 223px;
+}
+
+.reset_but {
+    /*CLASS SELECTOR*/
+    border: solid 3px;
+    border-color: rgb(255, 170, 0);
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    outline: none;
+    background-color: rgb(255, 170, 0);
+
+}
+
+.reset_but:hover {
+    /*PSEUDO CLASS SELECTOR*/
+    background-color: rgb(226, 43, 43);
+    border-color: rgb(226, 43, 43);
+}
